@@ -9,7 +9,7 @@ body {
 	margin: 0;
 }
 
-h1 {
+h1, h2 {
 	margin: 0;
 }
 
@@ -21,13 +21,20 @@ ul {
 	list-style: none;
 }
 
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 /* header */
 header {
+	background-color: black;
 	height: 69px;
 	border-bottom: 1px solid seashell;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1;
 }
 
 header .flex {
@@ -74,5 +81,56 @@ nav a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
 
+/* items */
+
+.items {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.teas {
+	justify-content: center;
+}
+
+.teas img {
+	width: 300px;
+	height: 200px;
+}
+
+/* locations */
+.locations {
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+	background-image: url(img/img-locations-background.jpg);
+	position: relative;
+}
+
+.locations h2 {
+	padding-top: 72px;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.cards {
+	justify-content: center;
+	margin-bottom: 72px;
+}
+
+.card {
+	background-color: black;
+	width: 300px;
+	margin: 15px 0 20px 20px;
+}
+
+.card p {
+	line-height: 2;
 }
