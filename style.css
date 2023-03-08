@@ -1,0 +1,78 @@
+/* common */
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: .9;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+ul {
+	list-style: none;
+}
+
+/* header */
+header {
+	height: 69px;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header .flex {
+	height: 100%;
+	margin: 0 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	text-align: left;
+	align-content: center;
+	height: 50px;
+}
+
+header img {
+	height: 50px;
+}
+
+ul li {
+	margin-left: 10px;
+}
+
+nav a{
+	color: seashell;
+}
+
+/* banner */
+.banner {
+	margin-top: 69px;
+	position: relative;
+}
+
+.banner img {
+	height: 700px;
+	width: 1200px;
+	object-fit: cover;
+}
+
+.statement {
+	background-color: black;
+	width: 1200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
